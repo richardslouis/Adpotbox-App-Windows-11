@@ -1,0 +1,2 @@
+MainPackage=C:\Users\Richards Louis\Documents\Visual Studio 2017\Projects\Windows10\Adpotbox\Adpotbox\bin\x86\Release\Adpotbox_6.0.2206.0_x86.appx
+SymbolPackage=C:\Users\Richards Louis\Documents\Visual Studio 2017\Projects\Windows10\Adpotbox\Adpotbox\AppPackages\Adpotbox_6.0.2206.0_Test\Adpotbox_6.0.2206.0_x86.appxsym

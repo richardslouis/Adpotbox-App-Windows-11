@@ -1,0 +1,1649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
+<REPORT xml:lang="en-IN" OVERALL_RESULT="PASS" VERSION="10.0.14393.33" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=BB7B72A7-44D7-4BE4-8610-6E59E2F1146B" APP_NAME="" APP_VERSION="" OSVERSION="10.0.15063.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="16393" VALIDATION_TYPE="UI" ReportGenerationTime="14-04-2017 16:26:47" ID="57867ace8d664c517da166e49c391331">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:00s.93ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:23s.68ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:32s.56ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:26s.46ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="80" NAME="App prelaunch" DESCRIPTION="App should pass app prelaunch validation." EXECUTIONTIME="00h:00m:59s.15ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:01s.76ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:00s.93ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.03ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="74" NAME="Bundle manifest" DESCRIPTION="Bundle manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:00s.91ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:00s.95ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the appx manifest." EXECUTIONTIME="00h:00m:00s.91ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.84ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:00s.76ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:00s.94ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:03s.34ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.71ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.60ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.19ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:00s.91ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:00s.89ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:11s.12ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:01s.34ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.96ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.96ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.84ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.82ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:00s.93ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:00s.96ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:00s.93ms">
+        <MESSAGES />
+        <RESULT><![CDATA[PASS]]></RESULT>
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="1362InfantLouisRichards.Adpotbox" Type="Application" Source="AppxPackage" Publisher="CN=BB7B72A7-44D7-4BE4-8610-6E59E2F1146B" Version="2.0.1201.0" Language="1033" InstallDate="04/14/2017 10:53:08" OSVersionAtInstallTime="10.0.0.15063" RootDirPath="c:\program files\windowsapps\1362infantlouisrichards.adpotbox_2.0.1201.0_x64__t8fw2476bzf4t" Id="0000ea8e4622793312dc3526ee34617f07f100000904">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="1362InfantLouisRichards.Adpotbox_2.0.1201.0_x64__t8fw2476bzf4t">
+              <Package>
+                <Identity Name="1362InfantLouisRichards.Adpotbox" Publisher="CN=BB7B72A7-44D7-4BE4-8610-6E59E2F1146B" Version="2.0.1201.0" ProcessorArchitecture="x64" />
+                <PhoneIdentity PhoneProductId="06818c8b-d3cc-4593-8223-0a657b87165c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+                <Properties>
+                  <DisplayName>Adpotbox</DisplayName>
+                  <PublisherDisplayName>RCHSFT</PublisherDisplayName>
+                  <Logo>Assets\StoreLogo.png</Logo>
+                </Properties>
+                <Dependencies>
+                  <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
+                  <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                  <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                  <PackageDependency Name="Microsoft.NET.Native.Runtime.1.4" MinVersion="1.4.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+                </Dependencies>
+                <Resources>
+                  <Resource Language="EN-US" />
+                  <Resource Scale="200" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" Executable="Adpotbox.exe" EntryPoint="Adpotbox.App">
+                    <VisualElements DisplayName="Adpotbox" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Adpotbox" BackgroundColor="#FFFFFF" ForegroundText="light">
+                      <DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Adpotbox" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png" />
+                      <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FFFFFF" />
+                      <InitialRotationPreference>
+                        <Rotation Preference="portrait" />
+                        <Rotation Preference="landscape" />
+                        <Rotation Preference="portraitFlipped" />
+                        <Rotation Preference="landscapeFlipped" />
+                      </InitialRotationPreference>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClient" />
+                </Capabilities>
+              </Package>
+            </PackageManifest>
+            <BundleManifest PackageFamilyName="1362InfantLouisRichards.Adpotbox_t8fw2476bzf4t">
+              <Bundle SchemaVersion="2.0">
+                <Identity Name="1362InfantLouisRichards.Adpotbox" Publisher="CN=BB7B72A7-44D7-4BE4-8610-6E59E2F1146B" Version="2.0.1201.0" />
+                <Packages>
+                  <Package Type="application" Version="2.0.1201.0" Architecture="x86" FileName="Adpotbox_2.0.1201.0_x86.appx" Offset="16548810" Size="7711984">
+                    <Resources>
+                      <Resource Language="EN-US" />
+                      <Resource Scale="200" />
+                    </Resources>
+                  </Package>
+                  <Package Type="application" Version="2.0.1201.0" Architecture="x64" FileName="Adpotbox_2.0.1201.0_x64.appx" Offset="8806106" Size="7742622">
+                    <Resources>
+                      <Resource Language="EN-US" />
+                      <Resource Scale="200" />
+                    </Resources>
+                  </Package>
+                  <Package Type="application" Version="2.0.1201.0" Architecture="arm" FileName="Adpotbox_2.0.1201.0_ARM.appx" Offset="58" Size="7726612">
+                    <Resources>
+                      <Resource Language="EN-US" />
+                      <Resource Scale="200" />
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="2.0.1201.0" ResourceId="split.scale-100" FileName="Adpotbox_2.0.1201.0_scale-100.appx" Offset="7726758" Size="127717">
+                    <Resources>
+                      <Resource Scale="100" />
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="2.0.1201.0" ResourceId="split.scale-125" FileName="Adpotbox_2.0.1201.0_scale-125.appx" Offset="7854563" Size="161423">
+                    <Resources>
+                      <Resource Scale="125" />
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="2.0.1201.0" ResourceId="split.scale-150" FileName="Adpotbox_2.0.1201.0_scale-150.appx" Offset="8016074" Size="190138">
+                    <Resources>
+                      <Resource Scale="150" />
+                    </Resources>
+                  </Package>
+                  <Package Type="resource" Version="2.0.1201.0" ResourceId="split.scale-400" FileName="Adpotbox_2.0.1201.0_scale-400.appx" Offset="8206300" Size="599724">
+                    <Resources>
+                      <Resource Scale="400" />
+                    </Resources>
+                  </Package>
+                </Packages>
+              </Bundle>
+            </BundleManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709" />
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis ProgramId="0000ea8e4622793312dc3526ee34617f07f100000904" AnalysisVersion="1.60" DictionaryVersion="3.1" Type="Package" Id="1362InfantLouisRichards.Adpotbox_2.0.1201.0_x64__t8fw2476bzf4t">
+      <AitFile ErrorCode="0" Name="jquery-sortable.js" Id="00000021b3df5cd2b9e8676d3a234f25f27823d012d1" />
+      <AitFile ErrorCode="0" Name="messages_vi.js" Id="0000016533f8695b081147bc46a61676273bffc7ba75" />
+      <AitFile ErrorCode="0" Name="bootstrap.min.js" Id="000001cd58b2aa361282a07a6e7aea73fca9ab7dd875">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.clientWidth" />
+          <AitFeature Name="document.body.scrollTop" />
+          <AitFeature Name="document.body.style.paddingRight" />
+          <AitFeature Name="document.constructor" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.clientHeight" />
+          <AitFeature Name="document.documentElement.getBoundingClientRect" />
+          <AitFeature Name="document.documentElement.scrollHeight" />
+          <AitFeature Name="document.documentElement.scrollTop" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.innerWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="da.js" Id="000001f92b458e8985f0e53a5b36030ffa9835524726" />
+      <AitFile ErrorCode="0" Name="messages_hr.js" Id="00000212dd87ccf549bf3113d96f811bc8d8764f8739" />
+      <AitFile ErrorCode="0" Name="jquery.flot.canvas.min.js" Id="00000312c129e40104f4637ef380103d1cd37b97e1c3">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.opera.version" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_de.min.js" Id="000003afcdb568f03a8125375c469d722e005c148ea0" />
+      <AitFile ErrorCode="0" Name="messages_es_PE.min.js" Id="000006c06b7b4b17d46e46d590c8026b287bd7f93975" />
+      <AitFile ErrorCode="0" Name="buttons.js" Id="000007288aeae4f3085f08fbdd20a03eee8643643968" />
+      <AitFile ErrorCode="0" Name="de-at.js" Id="000008b83ba8f3cf6e313cc0641f3057c765535aea05" />
+      <AitFile ErrorCode="0" Name="messages_sv.min.js" Id="0000090773d8763fe7748ded115217f628a1eb555039" />
+      <AitFile ErrorCode="0" Name="th.js" Id="000009b22a56412f95ee2d9864e5bcf6f927d71c554c" />
+      <AitFile ErrorCode="0" Name="flot-script.js" Id="00000a87d457f93619314507b17f4a0607ea65d69713" />
+      <AitFile ErrorCode="0" Name="zh-cn.js" Id="00000bd8e7b3a3d45c7113594b82ab8af3c1e40308ae" />
+      <AitFile ErrorCode="0" Name="velocity.min.js" Id="00000d67176713f56849c330681142dee780e0f8d039">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.clientLeft" />
+          <AitFeature Name="document.clientTop" />
+          <AitFeature Name="document.scrollLeft" />
+          <AitFeature Name="document.scrollTop" />
+          <AitFeature Name="navigator.userAgent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="custom-script.js" Id="00000eb0be1c908107fb995a9d24f2dad563773dc1da" />
+      <AitFile ErrorCode="0" Name="hr.js" Id="00000ecd6b69d9d138c965f63e474fc17498715fe7cc" />
+      <AitFile ErrorCode="0" Name="messages_cs.min.js" Id="00000f6d13a9d655958038cc6c1ce9c2a507b21ae321" />
+      <AitFile ErrorCode="0" Name="nb.js" Id="00000fcdf4256d9e1c65be6d56cfcf4e379b6111e73b" />
+      <AitFile ErrorCode="0" Name="formatter.min.js" Id="00000fde15c7a83556d7e7123a5ae60e07febc39f24b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.selection.createRange" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.clipboardData" />
+          <AitFeature Name="window.clipboardData.getData" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_zh_TW.js" Id="000012139a72cf9b52dbe2dc827d4acc2087b8be8ef6" />
+      <AitFile ErrorCode="0" Name="excanvas.js" Id="0000128d91aa0bf31033d5439176b6be09541f9969fe">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="navigator.userAgent.match" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="tabs.js" Id="000013d436fc21a572780a6cc5f8514c4169a7a56547">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.location.hash" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_ca.min.js" Id="0000146577717126b30fc56e525dc4209a9c4c50ebcc" />
+      <AitFile ErrorCode="0" Name="modernizr-2.8.3.min.js" Id="000015f441d0df5a01efc674d62b88c0c95bf233656a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.Modernizr" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_sl.min.js" Id="000016d1777eccb78ee1a6f1b53546952c17a67e7aff" />
+      <AitFile ErrorCode="0" Name="sl.js" Id="000017780f2017b907b82f35d578cef223f287fa3cbb" />
+      <AitFile ErrorCode="0" Name="jquery.js" Id="00001797d73e9da4287351f6fbec1b183c19be217c2a" />
+      <AitFile ErrorCode="0" Name="messages_vi.min.js" Id="00001826857c51a85e1bda0b11d67177f54b3cab0465" />
+      <AitFile ErrorCode="0" Name="jquery.timeago.min.js" Id="0000195bd7c9ad52954b74f5616580b378bab82376b7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.clearInterval" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="scrollFire.js" Id="000019ea1aa5e28f67d7220f89beab68db3bbe762a8f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.pageYOffset" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="de.js" Id="00001a204a7baab473c436384e1556d1d447b714597e" />
+      <AitFile ErrorCode="0" Name="jquery-1.12.4.min.js" Id="00001a4d3936393fd3ec3470dbea7d428e053e07cef6" />
+      <AitFile ErrorCode="0" Name="jquery.flot.crosshair.js" Id="00001a570471b966e7ae6d546b8f513b604b4636d205" />
+      <AitFile ErrorCode="0" Name="jquery.floatThead.min.js" Id="00001a793269032ef1ef3494ef9ce258974e3f3fab3f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.console.error" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="es.js" Id="00001b13687485377ef69de98f236205d68927cd595f" />
+      <AitFile ErrorCode="0" Name="additional-methods.min.js" Id="00001b7274faaf4a99dccf4a55f69c44f117e4fd9d92" />
+      <AitFile ErrorCode="0" Name="messages_he.min.js" Id="00001c49fb2de8878e6ff0b74f3df795920e656f5eec" />
+      <AitFile ErrorCode="0" Name="sk.js" Id="00001cd43a3dc4858c1b289750ea2c232c0ea7031827" />
+      <AitFile ErrorCode="0" Name="chart-script.js" Id="00001d22ee4d93a53f092d1e468d475fa34672e3a233">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.lineChart" />
+          <AitFeature Name="window.myDoughnut" />
+          <AitFeature Name="window.pieChartArea" />
+          <AitFeature Name="window.polarChartCountry" />
+          <AitFeature Name="window.trendingBarChart" />
+          <AitFeature Name="window.trendingLineChart" />
+          <AitFeature Name="window.trendingRadarChart" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="intro.js" Id="00001dbbd9a3cc31fb63f7fc8213bff7b896d5610844">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.attachEvent" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.defaultView" />
+          <AitFeature Name="document.defaultView.getComputedStyle" />
+          <AitFeature Name="document.detachEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.removeEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="cs.js" Id="00001ec6ae2e6173f59ee0b5650649c1e25600295d69" />
+      <AitFile ErrorCode="0" Name="jquery.flot.fillbetween.min.js" Id="00001ee776cfb319c8d9845392ed8ac4e3fe4a4a8c79" />
+      <AitFile ErrorCode="0" Name="messages_el.js" Id="00001f785cd65146ce9a65b3ea143b5f5db632c714f4" />
+      <AitFile ErrorCode="0" Name="perfect-scrollbar.min.js" Id="00001fdf5ec8006fed4cf1075e8929e3e339e1781e16">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.documentElement.style" />
+          <AitFeature Name="document.getSlection" />
+          <AitFeature Name="window.DocumentTouch" />
+          <AitFeature Name="window.MSPointerEvent" />
+          <AitFeature Name="window.PointerEvent" />
+          <AitFeature Name="window.getSelection" />
+          <AitFeature Name="window.navigator.msMaxTouchPoints" />
+          <AitFeature Name="window.onmousewheel" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="morris-script.js" Id="000021428e13e98466ab2b9ca9511dcf893863139f33" />
+      <AitFile ErrorCode="0" Name="messages_sl.js" Id="0000221122128f657ea9da6aa2d3a3e57b3df2c78741" />
+      <AitFile ErrorCode="0" Name="jquery.flot.crosshair.min.js" Id="0000224de20b0769115b48eaa8869bf506e13b6efb1b" />
+      <AitFile ErrorCode="0" Name="jquery.flot.errorbars.min.js" Id="000023067e67b66d85e44d41155d13e88008fd35fde1" />
+      <AitFile ErrorCode="0" Name="ar-sa.js" Id="0000240386a5f39c90f6cb9b2f29de3d7c082340f15d" />
+      <AitFile ErrorCode="0" Name="online.html" Id="000024167c855d5fe3b52a7ca4b87ce19828f3839cbe" />
+      <AitFile ErrorCode="0" Name="d3.js" Id="00002674a226732a96f20320ae4b3233bdf9476ff218">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_bg.js" Id="000026f477282ac37e916e344c7ec5096bbed551227d" />
+      <AitFile ErrorCode="0" Name="jquery.min.js" Id="0000276c87ff3e1e3155679c318938e74e5c1b76d809" />
+      <AitFile ErrorCode="0" Name="ro.js" Id="000028daf2dd847810a12b0fac67afa06a4fc5c0b491" />
+      <AitFile ErrorCode="0" Name="messages_bg.min.js" Id="0000299750d7263783889cb245e4e6d87ae80e293673" />
+      <AitFile ErrorCode="0" Name="intro.min.js" Id="00002a0a3f14b5e8de2d3bdfda648d5328e0c6cf44d1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.attachEvent" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.defaultView" />
+          <AitFeature Name="document.defaultView.getComputedStyle" />
+          <AitFeature Name="document.detachEvent" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.removeEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_fr.js" Id="00002ab4c7ad992aeaad3d53e9469ad5c584d6152273" />
+      <AitFile ErrorCode="0" Name="jquery.flot.errorbars.js" Id="00002b078e837632d301981bf25c11dea945ba84b469" />
+      <AitFile ErrorCode="0" Name="messages_ja.js" Id="00002b29db4ba1a26625480a329c78b7f9fc0b21abc6" />
+      <AitFile ErrorCode="0" Name="clothing.html" Id="00002c388d5b106c15f8b691ba2ea979b3a5a99373ed" />
+      <AitFile ErrorCode="0" Name="fullcalendar.min.js" Id="00002cf462f506fe1afc8f2747322eade5993b060f4a" />
+      <AitFile ErrorCode="0" Name="jquery-jvectormap-1.2.2.min.js" Id="00002d075abee9db8edcd7c2c5834f3940820b75abb4">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createStyleSheet" />
+          <AitFeature Name="document.namespaces.add" />
+          <AitFeature Name="document.namespaces.rvml" />
+          <AitFeature Name="window.DocumentTouch" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_fi.min.js" Id="00002d16c0e3fdea647644d180043f482da5c018f3f9" />
+      <AitFile ErrorCode="0" Name="jquery.flot.resize.js" Id="00002d8280fbabf9a1eabbcbc562b9763cb07952118b" />
+      <AitFile ErrorCode="0" Name="jquery-ui-slider-pips.min.js" Id="00002e016055dece9244655639fc5d2b17b2abc7bfba" />
+      <AitFile ErrorCode="0" Name="messages_bn_BD.js" Id="00002e2e829517be315a8d3a02c1123c0da9b551e7d8" />
+      <AitFile ErrorCode="0" Name="google-map-script.js" Id="00002ebcd9deb589dfefbae50ffcb097468c27805827">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_es_CL.min.js" Id="00002f7fd25ecba195ac65cc84259e279fe125a854ba" />
+      <AitFile ErrorCode="0" Name="messages_sr_lat.min.js" Id="00002f870b010728ccc43f5c1264fe81b3ed2bcd37e5" />
+      <AitFile ErrorCode="0" Name="ccp.html" Id="00002ff6c889c2dee55f99c8d622bd3d6c2221eb0da5" />
+      <AitFile ErrorCode="0" Name="jquery.flot.stack.min.js" Id="0000301ac35b09eaaf3af1abf6fae583d4f9afde3a7f" />
+      <AitFile ErrorCode="0" Name="chartjs-sample-chart.js" Id="00003085c325c7083efe999afe7ef18fb5fde6927c64">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.BarChartSample" />
+          <AitFeature Name="window.DoughnutChartSample" />
+          <AitFeature Name="window.LineChartSample" />
+          <AitFeature Name="window.PieChartSample" />
+          <AitFeature Name="window.PolarChartSample" />
+          <AitFeature Name="window.RadarChartSample" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.fillbetween.js" Id="0000317ad7cee551412555699427e40d805218050f22" />
+      <AitFile ErrorCode="0" Name="jquery.dynatree.js" Id="0000333a620823c5a9647eb031f68d0570f51dc813af">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.console.info.apply" />
+          <AitFeature Name="window.console.log" />
+          <AitFeature Name="window.console.log.apply" />
+          <AitFeature Name="window.console.warn.apply" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_kk.min.js" Id="0000335de155b3c6b660be6dfb18bc29a2117f8bf23d" />
+      <AitFile ErrorCode="0" Name="plugins.js" Id="0000343cd31ac2db392a4f42a94bd3aacbaac232bc70" />
+      <AitFile ErrorCode="0" Name="sr.js" Id="000035c509ae55c17b119e83271fc29737838e47bcb7" />
+      <AitFile ErrorCode="0" Name="numeric-input-example.js" Id="00003610f00f6a23ed70e492c50973399e7d22ac7654" />
+      <AitFile ErrorCode="0" Name="jquery.magnific-popup.min.js" Id="00003824067348f6485d6b07d3a43660804e3731b21a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.body.scrollHeight" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement.clientWidth" />
+          <AitFeature Name="navigator.appVersion" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.devicePixelRatio" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="chips.js" Id="00003a73fac42ed9d160cb8e17582c68056dcba0ab8d" />
+      <AitFile ErrorCode="0" Name="prism.js" Id="00003aaaa74d1e05a71708101f5471b0655f7b379647">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="location.hash.slice" />
+          <AitFeature Name="window.addEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_ru.min.js" Id="00003ac8faaac5c22bf83887b02459136a079a383387" />
+      <AitFile ErrorCode="0" Name="jquery.flot.image.js" Id="00003b4893e9301f056e02df9e630ac126fda2e688d6" />
+      <AitFile ErrorCode="0" Name="slider.js" Id="00003bc79b1c3908d7fd7e63008f5e92863d45fc7b66" />
+      <AitFile ErrorCode="0" Name="dropdown.js" Id="00003c3fe785389d344d1e7996f1b40cf47faf8222ac">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.innerHeight" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.time.js" Id="00003c53aa9a2198275d29821534e82f90f463ed1fab" />
+      <AitFile ErrorCode="0" Name="fa.js" Id="00003e01d8391272c64e01f18698a91f0de95ac13a03" />
+      <AitFile ErrorCode="0" Name="jquery.flot.image.min.js" Id="00003eae2b90dbb4c48365ea464ed48709c6cee49bfd" />
+      <AitFile ErrorCode="0" Name="ja.js" Id="00003fd4f0a359932501784c8aecd27be22664b5345d" />
+      <AitFile ErrorCode="0" Name="messages_si.min.js" Id="00004040401a9db30fde90810d6d8325150cd5a86ca0" />
+      <AitFile ErrorCode="0" Name="collapsible.js" Id="000042666d59af14832bec596769c0d7b053b4982e5a" />
+      <AitFile ErrorCode="0" Name="jquery.flot.canvas.js" Id="000042c698631324b1c0044bd52a1e024f6781955a5a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.opera.version" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="sparkline-script.js" Id="000043880cca80646426b30fa239753649c547ee9acf" />
+      <AitFile ErrorCode="0" Name="messages_et.min.js" Id="000043c5b07644a3429cfbbf9a3806567c3a451bc3fd" />
+      <AitFile ErrorCode="0" Name="messages_ru.js" Id="0000442b0081a00865d7efcc2da4edbd660f5b9d1331" />
+      <AitFile ErrorCode="0" Name="fr-ca.js" Id="000044bcab712112f1d0a57b362dbf65faf65e921d8f" />
+      <AitFile ErrorCode="0" Name="plugins.min.js" Id="00004621d078261203e80fe61a391ae4d32eba647cf2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.cancelFullScreen" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.documentElement.mozRequestFullScreen" />
+          <AitFeature Name="document.documentElement.requestFullScreen" />
+          <AitFeature Name="document.documentElement.webkitRequestFullScreen" />
+          <AitFeature Name="document.fullScreenElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.mozCancelFullScreen" />
+          <AitFeature Name="document.mozFullScreen" />
+          <AitFeature Name="document.webkitCancelFullScreen" />
+          <AitFeature Name="document.webkitIsFullScreen" />
+          <AitFeature Name="window.innerHeight" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery-ui-slider-pips.js" Id="00004637f0da908dea9f681c38b5bd269d91f700341e" />
+      <AitFile ErrorCode="0" Name="index.html" Id="000046ead07b3848a837944fff8bbe0390b3cace34a9" />
+      <AitFile ErrorCode="0" Name="messages_tj.min.js" Id="0000488b69cff6030e10477625218fce6614a82d8126" />
+      <AitFile ErrorCode="0" Name="mindmup-editabletable.js" Id="0000490e2efa2096cfed0f604cb6f907668cda45bc6c" />
+      <AitFile ErrorCode="0" Name="messages_cs.js" Id="00004b0896a3b66f2ec012ce87702d113d33ce19907f" />
+      <AitFile ErrorCode="0" Name="imagesloaded.pkgd.min.js" Id="00004bccbca87d32236ed7a6f37129cc1accf20d2a8f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.querySelectorAll" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_id.js" Id="00004c4ac140918deecd74ab096948b163e2c99784e7" />
+      <AitFile ErrorCode="0" Name="richiesoft.html" Id="00004e1be1c637871f3b71f2684629db6e34e3666bb9" />
+      <AitFile ErrorCode="0" Name="ar-tn.js" Id="00004ea79b3724e820c93da545b2f58b0fdda9e472a8" />
+      <AitFile ErrorCode="0" Name="messages_it.min.js" Id="00004f57ffbec954c4a737f05c685e1d93714e622d6e" />
+      <AitFile ErrorCode="0" Name="main.js" Id="00005214d0a81ec6c5bb4a3c5cafe7a1031df29666e3">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="location.hash.substr" />
+          <AitFeature Name="window.scrollTop" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_es_PE.js" Id="00005414293e96ae0cb0a02bef22211cb797700d14d0" />
+      <AitFile ErrorCode="0" Name="jquery.flot.categories.js" Id="000054196fc214523c276f99eab1e6ed753602fc7f6e" />
+      <AitFile ErrorCode="0" Name="messages_fi.min.js" Id="00005425aa119210790ff1c1aaf405c985034a65d8e5" />
+      <AitFile ErrorCode="0" Name="dropify.js" Id="000056140c116001cfa06ac990ece13171ef5131351b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.MaxTouchPoints" />
+          <AitFeature Name="navigator.msMaxTouchPoints" />
+          <AitFeature Name="window.FileReader" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_es_CL.js" Id="000056527d241d84d6bef5d6e73de2287d651bc99696" />
+      <AitFile ErrorCode="0" Name="jquery.flot.stack.js" Id="000056f166fb0d60d360d32f65ad628150e1b96eed75" />
+      <AitFile ErrorCode="0" Name="toasts.js" Id="00005878594a7b631c4420b91d828a9a8790e228f96d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.clearInterval" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="data-tables-script.js" Id="0000588a4714b66260fee1b2d7a87a02e232a5a31d0b" />
+      <AitFile ErrorCode="0" Name="jquery.flot.js" Id="00005a830d8c757562cd3157e4dee5cc2f138487238a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.G_vmlCanvasManager" />
+          <AitFeature Name="window.G_vmlCanvasManager.initElement" />
+          <AitFeature Name="window.devicePixelRatio" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="picker.date.js" Id="00005adbec9cef26aeb03da7673bbe18d1cac1cf30f0" />
+      <AitFile ErrorCode="0" Name="waves.js" Id="00005cf558731b06e631f2190cfddc7ab74de58b7089">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.body.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.querySelectorAll.bind" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_de.js" Id="00005d83d6494cd2ba1947ccb599cd546a5f490de549" />
+      <AitFile ErrorCode="0" Name="messages_zh_TW.min.js" Id="00005ee61f1de1df34ff3a8bcff2be3a57b755c9cff2" />
+      <AitFile ErrorCode="0" Name="jquery.flot.pie.js" Id="00005f0d44a1b2db74915b5e7c2ab4b987a7250d87da" />
+      <AitFile ErrorCode="0" Name="messages_ko.min.js" Id="00005f38c844bcda1bcc117b85b15694a4f017037705" />
+      <AitFile ErrorCode="0" Name="fullcalendar.js" Id="00006056eb8bd912257fd0aadd399e3762b818105a7a" />
+      <AitFile ErrorCode="0" Name="jquery.flot.selection.min.js" Id="000060611c8f1c76146a9c51dc443acd04968a2f44fb">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.focus" />
+          <AitFeature Name="document.onselectstart" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_sk.js" Id="00006078471a2024cfa638288691daed64652c411fd9" />
+      <AitFile ErrorCode="0" Name="translation-script.js" Id="000060dc70e32209cb36e68952bced6807433aebd4d6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.language" />
+          <AitFeature Name="navigator.userLanguage" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_no.min.js" Id="000061b97e2efa844b8fcedefc7ebc045038edb28a05" />
+      <AitFile ErrorCode="0" Name="jquery.min.js" Id="000062c4042e9ebc691a5372d653b424512a561d1670" />
+      <AitFile ErrorCode="0" Name="ru.js" Id="00006374e7ab8630accdf85b5a990e4feb660636a1f3" />
+      <AitFile ErrorCode="0" Name="bg.js" Id="0000637ba0c27bfe408039245d7392877c979753e1f0" />
+      <AitFile ErrorCode="0" Name="jquery.hammer.js" Id="0000656ceb73d6a0049a7319c28d608df4d3a71a9fdc" />
+      <AitFile ErrorCode="0" Name="messages_ge.min.js" Id="0000656cf17374e8b7496c483ef1f694fb7842f6b1ab" />
+      <AitFile ErrorCode="0" Name="jquery.colorhelpers.js" Id="0000658e0c928ce129bb4be604d68bb8c8dc33cc3235" />
+      <AitFile ErrorCode="0" Name="tooltip.js" Id="0000659b32d9b7b78a4dd46cb98722b42da5dad3497f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_is.min.js" Id="000066f24ae6ddd0ea2f400c6321c4a50c2f410fd988" />
+      <AitFile ErrorCode="0" Name="carousel.js" Id="00006726bd28be50df5224a6704d1ef771766831f78f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.style" />
+          <AitFeature Name="window.ontouchstart" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_th.min.js" Id="0000686e505a58db3138e53aa6c86da72d63afca9723" />
+      <AitFile ErrorCode="0" Name="messages_eu.min.js" Id="00006c93a7564bc0bb57b485bb79b1b171ae02a90fe7" />
+      <AitFile ErrorCode="0" Name="messages_ro.min.js" Id="00006ea38afcef029a5c5380c96ba3ed9048c2958a35" />
+      <AitFile ErrorCode="0" Name="messages_et.js" Id="00006ec626951b3eaf0f2bceeb34e51cbfdc4590fad2" />
+      <AitFile ErrorCode="0" Name="messages_kk.js" Id="00006f0ede93f4a6812861666ee6f470f5aa98b6c746" />
+      <AitFile ErrorCode="0" Name="materialize.min.js" Id="00006f953060c54ae78cfdda3af4e70709f0bda1da46">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.body.addEventListener" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.clientLeft" />
+          <AitFeature Name="document.clientTop" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll.bind" />
+          <AitFeature Name="document.scrollLeft" />
+          <AitFeature Name="document.scrollTop" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.Materialize" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.validate_field" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_ja.min.js" Id="00007039923ca7549e62530cfad4bb5e8c562b589eac" />
+      <AitFile ErrorCode="0" Name="messages_tr.min.js" Id="000070731a5198412fbcdd27bcfb5011b8f398fecd97" />
+      <AitFile ErrorCode="0" Name="en-gb.js" Id="000072699a4b4a4d97a4227724395ebe1ae64aca1cf2" />
+      <AitFile ErrorCode="0" Name="messages_es.js" Id="0000739280bcf38e39ae71fce66a65006a3f9f5b2bdd" />
+      <AitFile ErrorCode="0" Name="index.html" Id="0000739ba757d834f79f3d6473066a3c7d6f4a971cb1" />
+      <AitFile ErrorCode="0" Name="jquery.colorhelpers.min.js" Id="000073bcc5e2f8c1dca0e53f852a08e485b777847fd5" />
+      <AitFile ErrorCode="0" Name="messages_sv.js" Id="000074a114eab626efd547f0d792240282f880c14344" />
+      <AitFile ErrorCode="0" Name="ar.js" Id="000074ae8b0ce766296a0293887939510bbb38a392b1" />
+      <AitFile ErrorCode="0" Name="messages_sr.js" Id="000074b663d1a32a5295df656177190d6fe6543c8cd2" />
+      <AitFile ErrorCode="0" Name="d3.min.js" Id="0000751927cc0f71697c6b6f680192ac84a6d7ff3787" />
+      <AitFile ErrorCode="0" Name="skel.min.js" Id="0000763a8fc7504139cee50c453f87b5aa204965463a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement.clientHeight" />
+          <AitFeature Name="document.documentElement.clientWidth" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="navigator.msMaxTouchPoints" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.onorientationchange" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.styleMedia" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_it.js" Id="0000763c9428725dd970b1ff2255de2189bbbed6a262" />
+      <AitFile ErrorCode="0" Name="glueping.html" Id="0000780443acee5adb17ea14bb2fb9ff3682b1d78ec8" />
+      <AitFile ErrorCode="0" Name="zh-tw.js" Id="000078887ef538be34b9fe79eb0866e41ad7514670b1" />
+      <AitFile ErrorCode="0" Name="animation.js" Id="000078e4bae635f8a3e5941d61b6476b63fa4542dd3c" />
+      <AitFile ErrorCode="0" Name="xcharts-script.js" Id="00007951124b450fdd561aaf0104316a9ff68f18cd86">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.createElement" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_my.js" Id="000079bcebde720b4b9d72a0c0376ccffe810390a54d" />
+      <AitFile ErrorCode="0" Name="messages_zh.min.js" Id="00007a5a76fadbe3fdd2e43a716fb4d769353f3c3cea" />
+      <AitFile ErrorCode="0" Name="materialbox.js" Id="00007c963e63d716f8bc451d448b94dda390c2ee80f2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.sparkline.min.js" Id="00007e3cc75c9facc4ef22dc14002ee79e0976cc0130" />
+      <AitFile ErrorCode="0" Name="jquery-1.11.2.min.js" Id="00008130544c215fe5d1ec081d83461bf4a711e74882" />
+      <AitFile ErrorCode="0" Name="messages_lv.min.js" Id="000081386ca6885519444965f0a45c16fdcfed50ec9b" />
+      <AitFile ErrorCode="0" Name="pt-br.js" Id="000081468a9624e6eb6a1f2a4a09f273c8a81b4edac2" />
+      <AitFile ErrorCode="0" Name="parallax.js" Id="0000817faee0af249306319725013bf8dcf4d494b1a1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.innerHeight" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="lv.js" Id="0000824efff857e48294a26a49bd52d791d28a397eb2" />
+      <AitFile ErrorCode="0" Name="ko.js" Id="000083a3290e806c6fabd6b2635c2dcbacadcf94c1bc" />
+      <AitFile ErrorCode="0" Name="jquery-ui.custom.js" Id="0000841ecab98d5f3cf873df2b8ff8c97a79101ee30c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.body.offsetHeight" />
+          <AitFeature Name="document.body.offsetWidth" />
+          <AitFeature Name="document.body.parentNode.scrollHeight" />
+          <AitFeature Name="document.body.scrollHeight" />
+          <AitFeature Name="document.body.scrollLeft" />
+          <AitFeature Name="document.body.scrollTop" />
+          <AitFeature Name="document.body.scrollWidth" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.clientHeight" />
+          <AitFeature Name="document.documentElement.clientWidth" />
+          <AitFeature Name="document.documentElement.offsetHeight" />
+          <AitFeature Name="document.documentElement.offsetWidth" />
+          <AitFeature Name="document.documentElement.scrollHeight" />
+          <AitFeature Name="document.documentElement.scrollLeft" />
+          <AitFeature Name="document.documentElement.scrollTop" />
+          <AitFeature Name="document.documentElement.scrollWidth" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="location.hash.substring" />
+          <AitFeature Name="location.href.replace" />
+          <AitFeature Name="location.href.toLowerCase" />
+          <AitFeature Name="navigator.userAgent.toLowerCase" />
+          <AitFeature Name="window.Globalize" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_is.js" Id="0000843d9680eaa04c11e6fb4b177e7490ced2d6a6f3" />
+      <AitFile ErrorCode="0" Name="db.js" Id="000085038bb952f48decc2110386b5d9ce2368758f17" />
+      <AitFile ErrorCode="0" Name="messages_hy_AM.min.js" Id="000085166dd24a3077e6391b486b0d3ee5160d3a7fda" />
+      <AitFile ErrorCode="0" Name="moment.min.js" Id="0000851e2df2acd5f0bc4ef10fcf2f50c17f7aa09c1f" />
+      <AitFile ErrorCode="0" Name="messages_ko.js" Id="000087f3b69fa957ca615eb49f2482611a71549ad7ca" />
+      <AitFile ErrorCode="0" Name="nl.js" Id="0000881a4cdf141a50f7e21f0c9c8a595a135675d5fb" />
+      <AitFile ErrorCode="0" Name="messages_ca.js" Id="000088da54aaaf95a78206548c66e6085d03c83efe61" />
+      <AitFile ErrorCode="0" Name="jsgrid.min.js" Id="00008a2f1c48fac01adebfa3ec93cf6cc6fee0487644" />
+      <AitFile ErrorCode="0" Name="materialize.js" Id="00008b54141d1f1cdbe51b0991181521adf719f97ad2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.body.addEventListener" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.clientLeft" />
+          <AitFeature Name="document.clientTop" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll.bind" />
+          <AitFeature Name="document.scrollLeft" />
+          <AitFeature Name="document.scrollTop" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.Materialize" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.validate_field" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="xcharts.min.js" Id="00008b6d0c4cfabba8f20ec81aa2b0981dd1ad1f1857" />
+      <AitFile ErrorCode="0" Name="id.js" Id="00008d4a352d0723f4095845972270d4bc8e1c1e6af6" />
+      <AitFile ErrorCode="0" Name="jquery.formatter.js" Id="00008e8763e6fd40768a5fa2fe0ce0ee1d9c292e5660">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.selection.createRange" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.clipboardData" />
+          <AitFeature Name="window.clipboardData.getData" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="shooshpay.html" Id="00008ec670d71e755d8a8a58d5e8bb706576733f0ef2" />
+      <AitFile ErrorCode="0" Name="messages_da.js" Id="00009068241a7e07dca036d5e0380e34c281495c77a5" />
+      <AitFile ErrorCode="0" Name="messages_gl.min.js" Id="0000907ff00304227d1683fd6e6d9a0a368a873031f8" />
+      <AitFile ErrorCode="0" Name="jquery.easing.1.3.js" Id="000090c914dac634a23a8f6ac2bbde34f91d17b81584" />
+      <AitFile ErrorCode="0" Name="jquery.nestable.js" Id="0000915ba78308980a50aa6edc748533bce1d686fe80">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.scrollLeft" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.scrollTop" />
+          <AitFeature Name="document.elementFromPoint" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.pageYOffset" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_pt_BR.min.js" Id="000091ae053574e9c8748336fc2c36ef3f7cbbb399b3" />
+      <AitFile ErrorCode="0" Name="angular-materialize.js" Id="000091b479a49ad8cac67271d0fec171be30d3bcc652" />
+      <AitFile ErrorCode="0" Name="messages_pl.min.js" Id="00009200beb62232ebd56c3997ce0af8ee1b295a9e13" />
+      <AitFile ErrorCode="0" Name="prism.js" Id="000092093c93ed8494954239e230feff8efb1f52e942">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.querySelectorAll" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.magnific-popup.js" Id="000092b5a0b9fe19afed160dec42208e10bebb92283e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.body.scrollHeight" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement.clientWidth" />
+          <AitFeature Name="navigator.appVersion" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.devicePixelRatio" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.navigator.msPointerEnabled" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.min.js" Id="0000935a7104dda9dcfce22258659ab6f6732059bc22">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.G_vmlCanvasManager" />
+          <AitFeature Name="window.G_vmlCanvasManager.initElement" />
+          <AitFeature Name="window.devicePixelRatio" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_es_AR.min.js" Id="00009395d2095dd6152180aa82f55baa374562c1a9ba" />
+      <AitFile ErrorCode="0" Name="messages_pl.js" Id="000093dd209c5def37b2f864ffcc643e21d930b1d5c9" />
+      <AitFile ErrorCode="0" Name="jquery.validate.js" Id="0000943e2f0b31a444f5bd966553bd45446b3338fd3d" />
+      <AitFile ErrorCode="0" Name="messages_es_AR.js" Id="000094f1a479e488f037d21f3ee9563be0be63ffd627" />
+      <AitFile ErrorCode="0" Name="materialize.min.js" Id="000095b5e959149b8183822f8c2dd551d9cc92e7c617">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.body.addEventListener" />
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.clientLeft" />
+          <AitFeature Name="document.clientTop" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll.bind" />
+          <AitFeature Name="document.scrollLeft" />
+          <AitFeature Name="document.scrollTop" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.Materialize" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.pageYOffset" />
+          <AitFeature Name="window.validate_field" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_eu.js" Id="000095da3e62e65d94e6bcf42fcb1adc360b88e24ed0" />
+      <AitFile ErrorCode="0" Name="messages_bn_BD.min.js" Id="000095fc4d2393be569d470ce11da2f2c6609a5848d1" />
+      <AitFile ErrorCode="0" Name="messages_nl.min.js" Id="000096358afdd6805c9fb7e9527e5a0b112539f13f4b" />
+      <AitFile ErrorCode="0" Name="global.js" Id="00009638b5aa29897349b73415d881e6aa4d1f1d75fc">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.Materialize" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.pie.min.js" Id="0000963b958f366f2e813ecda5391af475c0bff9b0d2" />
+      <AitFile ErrorCode="0" Name="transitions.js" Id="000096a7bb4cfa21fed6f1730e9714c96beb6abf1d9d" />
+      <AitFile ErrorCode="0" Name="leanModal.js" Id="00009707e8a614dc25ff5ff091b5f21df996a957b7fa" />
+      <AitFile ErrorCode="0" Name="dropify.min.js" Id="0000983cbd414af52c2002f16aaba32d128d236004a7">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.MaxTouchPoints" />
+          <AitFeature Name="navigator.msMaxTouchPoints" />
+          <AitFeature Name="window.FileReader" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_hr.min.js" Id="00009928d88b43821ac1895a08a7c3667b74096d2c03" />
+      <AitFile ErrorCode="0" Name="messages_da.min.js" Id="00009989a50a77c223e6bf2a86992967e9e2a9824414" />
+      <AitFile ErrorCode="0" Name="pt.js" Id="00009b9820ce2dfba6b19d391e1e2c01b71421d7bb48" />
+      <AitFile ErrorCode="0" Name="messages_th.js" Id="00009be3999f26e19077ec9343cf802180554c06e72d" />
+      <AitFile ErrorCode="0" Name="messages_my.min.js" Id="00009c0911b5726be758545ccf8b399147f99c05520e" />
+      <AitFile ErrorCode="0" Name="messages_fa.js" Id="00009ca9182dcedcdf529a247bf98c66a4cedd958b0c" />
+      <AitFile ErrorCode="0" Name="finiup.html" Id="00009dfe5191445fc68acbab6d498e57147dbbc383e9" />
+      <AitFile ErrorCode="0" Name="messages_hu.min.js" Id="00009e073ced6d3ac9011e193a9239571287eb1e0c70" />
+      <AitFile ErrorCode="0" Name="messages_de.min.js" Id="00009e16c5f1e7d0bb520233277450bc89e5fbe8fe88" />
+      <AitFile ErrorCode="0" Name="messages_pt_PT.js" Id="00009f0fcaa470949e150ded2b054ca1001f48a150d2" />
+      <AitFile ErrorCode="0" Name="messages_fi.js" Id="00009f1fafb3fb3bf9b98bd5fc4d10b136c7f8e38118" />
+      <AitFile ErrorCode="0" Name="gcal.js" Id="0000a0af876a0b176062482847a8e9c6561fa15d8e9d" />
+      <AitFile ErrorCode="0" Name="messages_ar.js" Id="0000a0f0dcffcf4a6c0eef29c3f7a435c086ab9c13a7" />
+      <AitFile ErrorCode="0" Name="chartist.min.js" Id="0000a112362dfab875efb502bddb912e237afebd5703">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.matchMedia" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_lt.min.js" Id="0000a1b93c34da80331b5058461e78fc549d182421ce" />
+      <AitFile ErrorCode="0" Name="vi.js" Id="0000a251101cad2348cde48e67e6e62bc9c44b7f1cff" />
+      <AitFile ErrorCode="0" Name="methods_pt.min.js" Id="0000a318220e15ad2910b4a34b78f3a79cf889adc3cb" />
+      <AitFile ErrorCode="0" Name="lt.js" Id="0000a35498e4592b0d876c182b382098248754d015d2" />
+      <AitFile ErrorCode="0" Name="main.js" Id="0000a3d32f6324b257910df18b11c8fbf22b7b2ed783" />
+      <AitFile ErrorCode="0" Name="messages_es.min.js" Id="0000a44576a41b0fc3520b625e9bb6c10b5d692029f9" />
+      <AitFile ErrorCode="0" Name="additional-methods.js" Id="0000a60c21cd1cf940412300cf64168331df9d6fb816" />
+      <AitFile ErrorCode="0" Name="messages_he.js" Id="0000a67291f52b2b0ecf3ed6dbc767e415013a75feff" />
+      <AitFile ErrorCode="0" Name="others.html" Id="0000a6bad24ad4f8cd1fbe73db31b51068ee8e53964f" />
+      <AitFile ErrorCode="0" Name="vectormap-script.js" Id="0000a6e54b4101ea5eba0a9c48cd841251b64fe896ae">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.localStorage" />
+          <AitFeature Name="window.localStorage.setItem" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_fa.min.js" Id="0000a82e9adec90f597f6ad27a2e9f20b8025e6e0b8f" />
+      <AitFile ErrorCode="0" Name="fi.js" Id="0000a833e0b19a7e17bde66773a76f03cc8ad99e7086" />
+      <AitFile ErrorCode="0" Name="messages_ka.js" Id="0000a9894e6856ca7cda3cdd2659c9472db2a0ab490b" />
+      <AitFile ErrorCode="0" Name="media.html" Id="0000a9e99370b1cee1a52cb1a98d020e1529e0e336e4" />
+      <AitFile ErrorCode="0" Name="jquery.dataTables.min.js" Id="0000aa4f466f615f3212d72d6c78f8f779876460a661">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="location.pathname" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_pt.js" Id="0000aadb42878d5ce64d9463b699d677acf4f8ad43e8" />
+      <AitFile ErrorCode="0" Name="jqueryTranslator.min.js" Id="0000ac24d17abacb6497a9f2aca29201b5fc02aa92ec">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.language" />
+          <AitFeature Name="navigator.userLanguage" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_tj.js" Id="0000ac4939a6ca88afe2e731d91a75a0ee5bcff19275" />
+      <AitFile ErrorCode="0" Name="ion.rangeSlider.js" Id="0000acab48b1b22426b45d566129b57067c42cec68e6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_pt_BR.js" Id="0000addff4aedef4c3e351ea5e8e58ef3dee24894533" />
+      <AitFile ErrorCode="0" Name="jquery.floatThead-slim.min.js" Id="0000ae3ca6d42dffe88b883b0a99bcdcf3d0d61888c2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.console.error" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="excanvas.min.js" Id="0000ae4ce1a2bfb06c82653633191b04a8969a946b6b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="navigator.userAgent.match" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="he.js" Id="0000aebc8e86afef369fc40d4ea3c9d2c1882506b8d1" />
+      <AitFile ErrorCode="0" Name="jquery.flot.threshold.min.js" Id="0000afd1e8654dae8b736cf4c102ece0f46f0fba077e" />
+      <AitFile ErrorCode="0" Name="messages_pt_PT.min.js" Id="0000b002c0a4cab2de092b4c2be2cd50d948d256d188" />
+      <AitFile ErrorCode="0" Name="messages_fr.min.js" Id="0000b067d9a5369a5a0424336e11e3fe48a3e262bd8f" />
+      <AitFile ErrorCode="0" Name="raphael-min.js" Id="0000b17033614edab2077b9c19b9502d6f8f1fb72521">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.location.origin" />
+          <AitFeature Name="document.location.pathname" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="raphael-min.js" Id="0000b21aa8936019c082106d054a3a1f9c165845372b">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.platform.slice" />
+          <AitFeature Name="navigator.userAgent.match" />
+          <AitFeature Name="navigator.vendor" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ar-ma.js" Id="0000b2da856e76848b0ab5ab31bc8b2bebc87464d72c" />
+      <AitFile ErrorCode="0" Name="methods_nl.min.js" Id="0000b3b028066fd1172f0ddd7c8b9ee376ac3f97aef8" />
+      <AitFile ErrorCode="0" Name="uk.js" Id="0000b3da3449a0543b810673a505622afbb209198664" />
+      <AitFile ErrorCode="0" Name="methods_nl.js" Id="0000b60cc822e996efdcafadf88721ef02fb3a4b6883" />
+      <AitFile ErrorCode="0" Name="sideNav.js" Id="0000b91c173062850d1e43d30ac6643850893556e882">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.innerWidth" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="cards.js" Id="0000b9c8140071be2da17c9783a5ff73a2a465851b33" />
+      <AitFile ErrorCode="0" Name="jsgrid-script.js" Id="0000ba3cea62910f2dd6a3fe6bdaef63eb1f07721828" />
+      <AitFile ErrorCode="0" Name="tr.js" Id="0000baff5092129a36430daf7f52752931d7d7a3d783" />
+      <AitFile ErrorCode="0" Name="messages_ro.js" Id="0000bbe8624bd1f9bedaa3022d6c168a26e1747cec33" />
+      <AitFile ErrorCode="0" Name="scale.fix.js" Id="0000bbf62458c63fca2535965f9dfaacfbc6bc697e03">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="navigator.userAgent.match" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="el.js" Id="0000bc5095aa8400eec85499baf3133f1d9508dbc73b" />
+      <AitFile ErrorCode="0" Name="jquery.flot.time.min.js" Id="0000be0dfabf5c480a7a51e4dc46b5c7f55e00bb9540" />
+      <AitFile ErrorCode="0" Name="messages_no.js" Id="0000be3b6c9fbe1e1139272e56cd180c6dd969d20bc2" />
+      <AitFile ErrorCode="0" Name="jsgrid.js" Id="0000be8ed3e44ae73d0a910fce12d90538eae52e4f32" />
+      <AitFile ErrorCode="0" Name="picker.js" Id="0000bedad564273fef4430e66c26eed2c427009f8771">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="window.getComputedStyle" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="scrollspy.js" Id="0000bf33dde83839cde360c59c524ca9002e1929e2ba" />
+      <AitFile ErrorCode="0" Name="messages_gl.js" Id="0000bf95315ab84d7f10befe91d289deb4f2de21b079" />
+      <AitFile ErrorCode="0" Name="messages_id.min.js" Id="0000c097c11f19da59805376de633e3d132a841b036f" />
+      <AitFile ErrorCode="0" Name="plugins.js" Id="0000c12f0fa734639cbef679b0031738bb593bd0fff1">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.cancelFullScreen" />
+          <AitFeature Name="document.createEvent" />
+          <AitFeature Name="document.documentElement.mozRequestFullScreen" />
+          <AitFeature Name="document.documentElement.requestFullScreen" />
+          <AitFeature Name="document.documentElement.webkitRequestFullScreen" />
+          <AitFeature Name="document.fullScreenElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.mozCancelFullScreen" />
+          <AitFeature Name="document.mozFullScreen" />
+          <AitFeature Name="document.webkitCancelFullScreen" />
+          <AitFeature Name="document.webkitIsFullScreen" />
+          <AitFeature Name="window.innerHeight" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_uk.min.js" Id="0000c302fc4f99c3a73193b74efdc2501e1a07a782e7" />
+      <AitFile ErrorCode="0" Name="en-ca.js" Id="0000c322aa496e4140be7fdb381ba808db81fc07def5" />
+      <AitFile ErrorCode="0" Name="messages_si.js" Id="0000c3ea7ea7b98b415f92c2f1e210dc18619d896058" />
+      <AitFile ErrorCode="0" Name="xcharts.js" Id="0000c489a47b43955f8ac670d9c7013a5af2cedc0ce5" />
+      <AitFile ErrorCode="0" Name="messages_zh.js" Id="0000c4e02d40d32ff794bd9f9b5e8081f99ddfaec695" />
+      <AitFile ErrorCode="0" Name="chartist-script.js" Id="0000c5e5cff03b2d64d5479b79f2a4a7178cee575253">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.__exampleAnimateTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="sv.js" Id="0000c69e53fbfbedf0f35a73455e29e0701b1ae94f56" />
+      <AitFile ErrorCode="0" Name="ca.js" Id="0000c6be1093f9d084057c93f706ebe741353a4dfdf5" />
+      <AitFile ErrorCode="0" Name="character_counter.js" Id="0000c78497142e9f60fcb9e4e2f43ba6d099069e4725" />
+      <AitFile ErrorCode="0" Name="messages_sr_lat.js" Id="0000c80a43a0e9c446da8db5cbe386f8253efe24ea79" />
+      <AitFile ErrorCode="0" Name="messages_ge.js" Id="0000c9c263c6157f3220615906eb0643bd144ce7adb1" />
+      <AitFile ErrorCode="0" Name="jquery.flot.resize.min.js" Id="0000ca15494c798ac1393d1ce2733845f04e378b086f" />
+      <AitFile ErrorCode="0" Name="hi.js" Id="0000cd8ff16df15749feda794aaea8c07a7b37c811b4" />
+      <AitFile ErrorCode="0" Name="index.html" Id="0000cdc7a1f2f41c6c5219fa5ff55910d702c3726667" />
+      <AitFile ErrorCode="0" Name="messages_el.min.js" Id="0000ceef1c64fe6b85686f38a9ee56f83ee023106d78" />
+      <AitFile ErrorCode="0" Name="pushpin.js" Id="0000cf40f774a44bdd828f67868fa36dda150ca1dc26" />
+      <AitFile ErrorCode="0" Name="messages_sr.min.js" Id="0000cf7d8158e536f03b507696f2984b9d2a30bd2eb0" />
+      <AitFile ErrorCode="0" Name="jquery.flot.navigate.min.js" Id="0000cfb3e142e6eb86dd591a4e67394150cb0796de02" />
+      <AitFile ErrorCode="0" Name="angular.min.js" Id="0000d0e3fccc46957eeaaf5611075a2015b410b64725">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.angular.element" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="is.js" Id="0000d1a7a13e957c11577606c5e63e0a4b64a01e9437" />
+      <AitFile ErrorCode="0" Name="hammer.min.js" Id="0000d1bdea1823882425a5e4c2b8bf5feb9bbeb51ef2">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="navigator.userAgent" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery-jvectormap-world-mill-en.js" Id="0000d21a0bc66442c030faa2b4d133282d3000549585" />
+      <AitFile ErrorCode="0" Name="jquery.flot.selection.js" Id="0000d23ac577ddc9e84418199594c7cb6226628f1c4c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.focus" />
+          <AitFeature Name="document.onselectstart" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="clrcompression.dll" Id="0000d3a784a0b601ab8905ec06f7c8f1e00f131425c2">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
+          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.floatThead-slim.js" Id="0000d5f08e2e1257ca7ef1829eb608f1bd60594f55c6">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.console.error" />
+          <AitFeature Name="window.scrollLeft" />
+          <AitFeature Name="window.scrollTop" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_lv.js" Id="0000d7e1ce93c025ffce3052358e5a15b67a44869d31" />
+      <AitFile ErrorCode="0" Name="jquery.flot.navigate.js" Id="0000d86aed8c51caae03fedcac4b897e6ba77ebbae4a" />
+      <AitFile ErrorCode="0" Name="jquery.cookies.min.js" Id="0000da1755b89fcd35328e42b42ae6e79655a6db771a" />
+      <AitFile ErrorCode="0" Name="methods_fi.js" Id="0000db98e256b673f0ada1855cb0ecd8cb2e8c3d4e29" />
+      <AitFile ErrorCode="0" Name="fr.js" Id="0000dd6f11df13377a12578cb1103e3771dad87bdeda" />
+      <AitFile ErrorCode="0" Name="jquery.formatter.min.js" Id="0000de46956c37554303954cc5c24efb2fd6118e9476">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.selection.createRange" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.clipboardData" />
+          <AitFeature Name="window.clipboardData.getData" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_uk.js" Id="0000e0054d7292580980932dc81f4ff8358598ac0ca0" />
+      <AitFile ErrorCode="0" Name="chart.min.js" Id="0000e019bfccf793f5071ca8f570324020fce5a00244">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.defaultView.getComputedStyle" />
+          <AitFeature Name="window.cancelAnimationFrame" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.console.warn" />
+          <AitFeature Name="window.devicePixelRatio" />
+          <AitFeature Name="window.mozCancelAnimationFrame" />
+          <AitFeature Name="window.mozRequestAnimationFrame" />
+          <AitFeature Name="window.msCancelAnimationFrame" />
+          <AitFeature Name="window.msRequestAnimationFrame" />
+          <AitFeature Name="window.oCancelAnimationFrame" />
+          <AitFeature Name="window.oRequestAnimationFrame" />
+          <AitFeature Name="window.requestAnimationFrame" />
+          <AitFeature Name="window.setTimeout" />
+          <AitFeature Name="window.webkitCancelAnimationFrame" />
+          <AitFeature Name="window.webkitRequestAnimationFrame" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="it.js" Id="0000e03aa01206a36d2e362bec8bafa2e5c349ffb94b" />
+      <AitFile ErrorCode="0" Name="jquery.floatThead.js" Id="0000e05721c2ad7d9d48856611a5b5e1ce3b79b10748">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.console.error" />
+          <AitFeature Name="window.scrollLeft" />
+          <AitFeature Name="window.scrollTop" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_sk.min.js" Id="0000e07aacf58eb88def8691c0a9a9f7559bc7dbfc7a" />
+      <AitFile ErrorCode="0" Name="formatter.js" Id="0000e27048cf1623cfc182fb367dd497608763b9ae42">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.selection.createRange" />
+          <AitFeature Name="navigator.userAgent" />
+          <AitFeature Name="window.clipboardData" />
+          <AitFeature Name="window.clipboardData.getData" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="util.js" Id="0000e32e958f74bd5edc4e1fbdd9fa6c30425d3c7954">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.location.href" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.symbol.min.js" Id="0000e5193fa63882426b26646f366ef77400d19bc1e0" />
+      <AitFile ErrorCode="0" Name="hu.js" Id="0000e97bee3ab08c9eeffee3d99df5e485fa5de83f84" />
+      <AitFile ErrorCode="0" Name="messages_hu.js" Id="0000eb58c1f5fad1c92889c4e436064e54a5ac6b4bfc" />
+      <AitFile ErrorCode="0" Name="jquery.dataTables.js" Id="0000ebb7e33c125508652771ea975b0a02e9ea079933">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="location.pathname" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_hy_AM.js" Id="0000ecc594b63d5c9eccc7da01d056616a530d5741c4" />
+      <AitFile ErrorCode="0" Name="jquery.flot.threshold.js" Id="0000ed0cdf34f93b17c2acbb008c446d5c59cb93aec9" />
+      <AitFile ErrorCode="0" Name="messages_ka.min.js" Id="0000ed9d592cb95c58fdd89172ae940a6b0c89cb5095" />
+      <AitFile ErrorCode="0" Name="messages_nl.js" Id="0000ee17c89b51949ebca607acad8eb7acdedadccb4d" />
+      <AitFile ErrorCode="0" Name="masonry.pkgd.min.js" Id="0000ee21797a9e39885ee0221b66ead65c0362196716">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.style" />
+          <AitFeature Name="document.documentElement.textContent" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="window.matchesSelector" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="fullcalendar-script.js" Id="0000eeb83d1f7583201492aaf9d654bc92642ff6de85" />
+      <AitFile ErrorCode="0" Name="jquery.flot.categories.min.js" Id="0000ef1b90d2f4d328a79949e7de7c57f9a074ac5aba" />
+      <AitFile ErrorCode="0" Name="Adpotbox.exe" Id="0000ef33a3988b442b8663b5e4d156c0f546043c1b46" />
+      <AitFile ErrorCode="0" Name="messages_lt.js" Id="0000efbef93faa355caf8312493aa5017be2ddf0a665" />
+      <AitFile ErrorCode="0" Name="pl.js" Id="0000f4f69775daae0c6761947be26672f839be5554f1" />
+      <AitFile ErrorCode="0" Name="en-au.js" Id="0000f5de3cdc6ae5e598017324748d5b9e7c6fb675f2" />
+      <AitFile ErrorCode="0" Name="Adpotbox.dll" Id="0000f6a5c976af0d5faeee8c1324ba33baf363562e0b">
+        <AitCategory Id="Com">
+          <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020402-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00020403-0000-0000-c000-000000000046}" />
+          <AitFeature Name="{00775c79-589b-5c36-ae72-2e7aab0270c6}" />
+          <AitFeature Name="{01e9a621-4a64-4ed9-954f-9edeb07bd903}" />
+          <AitFeature Name="{02ee93d4-448e-469e-9799-0a8a1f70f171}" />
+          <AitFeature Name="{05eb86f1-7140-5517-b88d-cbaebe57e6b1}" />
+          <AitFeature Name="{06386a7a-e009-5b0b-ab68-a8e48b516647}" />
+          <AitFeature Name="{06499997-f7b4-45fe-b763-7577d1d3cb4a}" />
+          <AitFeature Name="{077b29e4-dade-4f55-9b96-09e21b28eb1c}" />
+          <AitFeature Name="{09108f87-df6c-4180-9b3a-e60845825811}" />
+          <AitFeature Name="{09223e5a-75be-4499-8180-1ddc005421c0}" />
+          <AitFeature Name="{0c44717b-19f7-48d6-b046-cf22826eaa74}" />
+          <AitFeature Name="{0c456061-52cf-43fa-82f8-07f137351e5a}" />
+          <AitFeature Name="{0c5a605f-a7f1-5030-a179-9fd363caf3b5}" />
+          <AitFeature Name="{0d140f56-1dce-4fcd-85bc-5a5572273b9c}" />
+          <AitFeature Name="{0db89161-20d7-45df-9122-ba89576703ba}" />
+          <AitFeature Name="{10406ad6-b090-4a4a-b2ad-d682df27130f}" />
+          <AitFeature Name="{10d0b04e-bfe4-42cb-823c-3fecd8770ef8}" />
+          <AitFeature Name="{1115b13c-25d2-480b-89dc-eb3dcbd6b7fa}" />
+          <AitFeature Name="{11c1dff7-36c2-4102-b2ef-0217a97289b3}" />
+          <AitFeature Name="{11e6f20b-eba7-44c0-889b-edeb6a064ddd}" />
+          <AitFeature Name="{163c792f-bd75-413c-bf23-b1fe7b95d825}" />
+          <AitFeature Name="{1791587a-2a7c-4981-a2d8-ab99fffc65b9}" />
+          <AitFeature Name="{179d65e7-4658-4cb6-aa13-41d094ea255e}" />
+          <AitFeature Name="{18026348-8619-4c7b-b534-ced45d9de219}" />
+          <AitFeature Name="{18d636b7-53a4-4c15-a498-f3a9ca212a42}" />
+          <AitFeature Name="{1a8a9d02-e482-461b-b8c7-8efad1cce590}" />
+          <AitFeature Name="{1b02d57a-9634-4f14-91b2-133e42fdb3cd}" />
+          <AitFeature Name="{1c98c219-0b13-4240-89a5-d495dc189a00}" />
+          <AitFeature Name="{1cc0fdfc-69ee-4e43-9901-47f12687baf7}" />
+          <AitFeature Name="{1d1a8b8b-fa66-414f-9cbd-b65fc99d17fa}" />
+          <AitFeature Name="{1d1f9d60-d53b-57f7-b144-8f7c487846e8}" />
+          <AitFeature Name="{1e036276-2f60-55f6-b7f3-f86079e6900b}" />
+          <AitFeature Name="{1e466dc5-840f-54f9-b877-5e3a9f4b6c74}" />
+          <AitFeature Name="{1ee770ff-c954-59ca-a754-6199a9be282c}" />
+          <AitFeature Name="{1f93cd7a-8075-5ba9-bc3e-b04a94e14bc0}" />
+          <AitFeature Name="{230b9cb8-3419-4306-aabe-4a8e680d3627}" />
+          <AitFeature Name="{23429465-e36a-40e2-b139-a4704602a6e1}" />
+          <AitFeature Name="{246a91a9-ca43-4c0b-acef-81e8b8147520}" />
+          <AitFeature Name="{2532a062-f447-4950-9c46-f1e34a2c2238}" />
+          <AitFeature Name="{25f99ff7-9347-459a-9fac-b2d0e11c1a0f}" />
+          <AitFeature Name="{2603682a-9da6-4023-b496-496e5ef228d2}" />
+          <AitFeature Name="{26336658-2917-411d-bfc3-2f22471cbbe7}" />
+          <AitFeature Name="{272b1ef3-c633-4da5-a26c-c6d0f56b29da}" />
+          <AitFeature Name="{277151c3-9e3e-42f6-91a4-5dfdeb232451}" />
+          <AitFeature Name="{280335ae-5570-46c7-8e0b-602be71229a2}" />
+          <AitFeature Name="{29f8d454-905d-587e-b9d8-bfd418805a65}" />
+          <AitFeature Name="{29fed85d-3d22-43a1-add0-17027c08b212}" />
+          <AitFeature Name="{2ab1a205-1e73-4bcf-aabc-57b97e21961d}" />
+          <AitFeature Name="{2bf27008-2eb4-5675-b1cd-e9906cc5ce64}" />
+          <AitFeature Name="{2d162925-5966-4bfa-8638-4d345689f6cf}" />
+          <AitFeature Name="{2d60f06b-d25f-4d25-8653-e1c5e1108309}" />
+          <AitFeature Name="{2fa22f4b-707e-4b27-ad0d-d0d8cd468fd2}" />
+          <AitFeature Name="{3124d025-04a7-4d45-825e-8204a624dbf4}" />
+          <AitFeature Name="{31b71470-feff-4654-af48-9b398ab5772b}" />
+          <AitFeature Name="{320b7e22-3cb0-4cdf-8663-1d28910065eb}" />
+          <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
+          <AitFeature Name="{33d1299d-8d6e-4290-bf22-905cccd04d31}" />
+          <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
+          <AitFeature Name="{33f288a6-5c2c-4d27-bac7-7536088f1219}" />
+          <AitFeature Name="{354c0f34-e691-502a-a444-d5f07aee310e}" />
+          <AitFeature Name="{35aac87a-62ee-4d3e-a24c-2bc8432d68b7}" />
+          <AitFeature Name="{377f6162-6e4d-574e-bf01-77f4fd021d0e}" />
+          <AitFeature Name="{3792bc47-8c4b-4257-a5ae-cc3f8ed786eb}" />
+          <AitFeature Name="{37bc16e1-6062-4678-b20b-6c36ac9c59ac}" />
+          <AitFeature Name="{38b1ed92-a28a-4972-93df-f4f759b8afd2}" />
+          <AitFeature Name="{38ef4b0f-14f8-42df-9a1e-a4bcc4af77f4}" />
+          <AitFeature Name="{398c4183-793d-5b00-819b-4aef92485e94}" />
+          <AitFeature Name="{3b415733-48f2-58b0-9884-6f0d0e35dc1a}" />
+          <AitFeature Name="{3f367f87-9f5a-4b04-b818-b554c069597a}" />
+          <AitFeature Name="{400d5794-4c6f-491d-82d6-3517109399c6}" />
+          <AitFeature Name="{410b7711-ff3b-477f-9c9a-d2efda302dc3}" />
+          <AitFeature Name="{411136f7-770d-599c-8545-6d053a6a1799}" />
+          <AitFeature Name="{41f752ef-12af-41b9-ab36-b1eb4b512460}" />
+          <AitFeature Name="{4207a996-ca2f-42f7-bde8-8b10457a7f30}" />
+          <AitFeature Name="{42e26ae1-d357-57e8-bb48-f75c9ff69d91}" />
+          <AitFeature Name="{430ecece-1418-5d19-81b2-5ddb381603cc}" />
+          <AitFeature Name="{433ba1a4-e1e2-48fd-b7fc-b5d6eee65033}" />
+          <AitFeature Name="{43929d18-5ec9-4b5a-919c-4205b0c804b6}" />
+          <AitFeature Name="{43e0fe10-14ec-427e-8c57-dee60df60aa8}" />
+          <AitFeature Name="{44a9796f-723e-4fdf-a218-033e75b0c084}" />
+          <AitFeature Name="{470fa818-6862-44d9-b3d1-c0696373de35}" />
+          <AitFeature Name="{47bd7ff2-5295-57bb-9212-2b0b8692aa13}" />
+          <AitFeature Name="{4825d6c4-835a-5da1-9bdd-12e97e16fb7a}" />
+          <AitFeature Name="{4bdaf9c8-cdb2-4acb-bfc3-6648563378ec}" />
+          <AitFeature Name="{4d239005-3c2a-41b1-9022-536bb9cf93b1}" />
+          <AitFeature Name="{4dab4671-12b2-43c7-b892-9be2dcd3e88d}" />
+          <AitFeature Name="{4dd04f7e-7a11-4b2e-9933-577df39252b6}" />
+          <AitFeature Name="{4dd04f7f-7a11-4b2e-9933-577df39252b6}" />
+          <AitFeature Name="{4e534bdf-2960-4878-97a4-9624deb72f2d}" />
+          <AitFeature Name="{50850b26-267e-451b-a890-ab6a370245ee}" />
+          <AitFeature Name="{53425270-77b4-426b-859f-81e19d512546}" />
+          <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
+          <AitFeature Name="{5407b704-8147-4343-838f-dd1ee908c137}" />
+          <AitFeature Name="{5862cc46-1f7d-479b-92a6-de7858fe8d54}" />
+          <AitFeature Name="{59140509-8bc9-4eb4-b636-dabdc4f46f66}" />
+          <AitFeature Name="{594ebe78-55ea-4a88-a50d-3402ae1f9cf2}" />
+          <AitFeature Name="{5a200ec7-0426-47dc-b86c-6f475915e451}" />
+          <AitFeature Name="{5c21c742-2ced-4fd9-ba38-7118d40e966b}" />
+          <AitFeature Name="{5c526665-f60e-4912-af59-5fe0680f089d}" />
+          <AitFeature Name="{5c985ac6-d802-4b38-a223-bf070c43fedf}" />
+          <AitFeature Name="{5db1aa05-9f80-48b6-ae6c-4f119de8ff13}" />
+          <AitFeature Name="{5e14280f-953e-4cf8-b9ea-c530a1ce02ad}" />
+          <AitFeature Name="{5e52f8ce-aced-5a42-95b4-f674dd84885e}" />
+          <AitFeature Name="{5e731f66-8d1f-45fb-af1d-73205c8fc7a1}" />
+          <AitFeature Name="{5f4c0b10-e38e-4b5d-be1a-5ed04246a635}" />
+          <AitFeature Name="{5f738b61-f86a-4917-93d1-f1ee9d3b35d9}" />
+          <AitFeature Name="{5fc9c137-ebb7-5e6c-9cba-686f2ec2b0bb}" />
+          <AitFeature Name="{60141efb-f2f9-5377-96fd-f8c60d9558b5}" />
+          <AitFeature Name="{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3}" />
+          <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
+          <AitFeature Name="{648a2b4d-53ca-4b5a-aa8e-3cc7440f4a67}" />
+          <AitFeature Name="{64e9be00-4dc1-493d-abe7-cbd3c577490d}" />
+          <AitFeature Name="{64e9be10-4dd1-494d-abf7-cbd3c577491d}" />
+          <AitFeature Name="{652c208c-8ccf-4399-bd3e-5a015aa1bc03}" />
+          <AitFeature Name="{6588d2a6-3972-5247-a870-e217b76de89c}" />
+          <AitFeature Name="{676d0be9-b65c-41c6-ba40-58cf87f201c1}" />
+          <AitFeature Name="{676d0bf9-b66c-41d6-ba50-58cf87f201d1}" />
+          <AitFeature Name="{6800d3fa-90b8-46f9-8e30-5ac25f73f0f9}" />
+          <AitFeature Name="{6834869d-7bd5-4033-b237-172f79abe393}" />
+          <AitFeature Name="{687a15ce-ae58-5e19-974e-34f17d92b941}" />
+          <AitFeature Name="{68d940cc-9ff0-49ce-b141-3f07ec477b97}" />
+          <AitFeature Name="{68ea500b-3fe9-4735-b6a0-e7601933b089}" />
+          <AitFeature Name="{69e5b468-f6fc-4013-aaa2-d53f1757d3b5}" />
+          <AitFeature Name="{6b5e0516-de96-4f0a-8d57-dcc9dae36c76}" />
+          <AitFeature Name="{6b73fe13-2cf2-4d48-8cbc-af67d23f1ce7}" />
+          <AitFeature Name="{6c3fb5fc-8e84-4c91-ac15-04a1d885500f}" />
+          <AitFeature Name="{6c4fc188-95bc-4261-9ec5-21cab677b734}" />
+          <AitFeature Name="{6d05fb29-7885-544e-9382-a1ad391a3fa4}" />
+          <AitFeature Name="{6da5e49e-6e9d-425c-bd7c-02173e39763f}" />
+          <AitFeature Name="{6e2980bb-98b8-413e-8129-971c6f7e4c8a}" />
+          <AitFeature Name="{6f5e63c7-e3aa-4eae-b0e0-dcf321ca4b2f}" />
+          <AitFeature Name="{704b4ec9-0373-506c-8af3-57e9245f1c4e}" />
+          <AitFeature Name="{718c7a23-eb9f-50a6-8cf7-fbac104e59c3}" />
+          <AitFeature Name="{71ba143f-598e-49d0-84eb-8febaedcc195}" />
+          <AitFeature Name="{72284824-db8c-42f8-b08c-53ff357dad82}" />
+          <AitFeature Name="{7230269c-054e-4cf3-86c5-be90eb6863d5}" />
+          <AitFeature Name="{72827082-5525-4bf2-bc09-1f5095d4964d}" />
+          <AitFeature Name="{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}" />
+          <AitFeature Name="{74b861a1-7487-46a9-9a6e-c78b512726c5}" />
+          <AitFeature Name="{74e9be21-5de2-595e-bc08-dbd3c577492c}" />
+          <AitFeature Name="{751b792e-5772-4488-8b87-f547faa64474}" />
+          <AitFeature Name="{75d6a78f-a302-4489-9898-24ea49182910}" />
+          <AitFeature Name="{761ce752-73c1-4f44-be75-43c49ec0d4d5}" />
+          <AitFeature Name="{7920eab1-a2e5-479a-bd50-6cef3c0b4970}" />
+          <AitFeature Name="{79b9d5f2-879e-4b89-b798-79e47598030c}" />
+          <AitFeature Name="{7bd1cf54-23cf-4cce-b2f5-4ce78d96896e}" />
+          <AitFeature Name="{7c2b1b85-6917-4361-9c02-0d9e3a420b95}" />
+          <AitFeature Name="{7c63d2e5-7a0e-4e12-b96a-7715aa6ff1c8}" />
+          <AitFeature Name="{7d7daf45-368d-4364-852b-dec927037b85}" />
+          <AitFeature Name="{7da68e21-0b8f-4f9f-a143-f8e7780136a2}" />
+          <AitFeature Name="{7f67a4e2-96e0-522b-8710-14c42d834f1e}" />
+          <AitFeature Name="{7fdcc3d7-e13e-5f76-afc6-0769c4086399}" />
+          <AitFeature Name="{80653f68-2cb2-4c1f-b590-f0f52bf4fd1a}" />
+          <AitFeature Name="{80a13c19-843a-451c-8cf5-44c701b0e216}" />
+          <AitFeature Name="{81212c2b-24d0-4957-abc3-224470a93a4e}" />
+          <AitFeature Name="{81c19cf1-74e6-4387-82eb-bb8fd64b4346}" />
+          <AitFeature Name="{861bf39b-6368-4dee-b40e-74684a5ce714}" />
+          <AitFeature Name="{86664478-8029-46fe-a789-1c2f3e2ffb5c}" />
+          <AitFeature Name="{8806a321-1e06-422c-a1cc-01696559e021}" />
+          <AitFeature Name="{8cb36951-58c8-43e3-94bc-41d33f8b630e}" />
+          <AitFeature Name="{8e86a951-04b9-4bd2-929d-fef3f71621d0}" />
+          <AitFeature Name="{8f9d0c94-5688-4b0c-a9f1-f931f7fa3dc3}" />
+          <AitFeature Name="{905a0fe0-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe1-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe2-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{905a0fe6-bc53-11df-8c49-001e4fc686da}" />
+          <AitFeature Name="{9274e6bd-49a1-4958-beee-d0e19587b6e3}" />
+          <AitFeature Name="{92c3102f-a327-5318-a6c1-76f6b2a0abfb}" />
+          <AitFeature Name="{930cef4b-b829-40fc-88f4-8513e8a64738}" />
+          <AitFeature Name="{93328409-4ea1-4afa-83dc-0c4e73e88bb1}" />
+          <AitFeature Name="{93bbe361-be5a-4ee3-b4a3-95118dc97a89}" />
+          <AitFeature Name="{94cb8668-8367-43d5-91bb-96eba37ec784}" />
+          <AitFeature Name="{94ea2b94-e9cc-49e0-c0ff-ee64ca8f5b90}" />
+          <AitFeature Name="{954e4bcf-0a77-42fb-b777-c2ed58a52e44}" />
+          <AitFeature Name="{95949780-1de9-40f2-b452-0de9f1910012}" />
+          <AitFeature Name="{96061c05-2dba-4d08-b0bd-2b30a131c6aa}" />
+          <AitFeature Name="{96369f54-8eb6-48f0-abce-c1b211e627c3}" />
+          <AitFeature Name="{96d922e6-a7ca-5c21-b9f7-e4504e8c7112}" />
+          <AitFeature Name="{98055b5a-36bb-5962-971f-8b87619eb17e}" />
+          <AitFeature Name="{9910aec7-8ab5-4118-9bc6-09f45a35073d}" />
+          <AitFeature Name="{9a16e097-f2e7-5bdc-b9f6-5a3f96ad3b59}" />
+          <AitFeature Name="{9abe1154-36f0-4268-8d88-121eedf45e6a}" />
+          <AitFeature Name="{9b0252ac-0c27-44f8-b792-9793fb66c63e}" />
+          <AitFeature Name="{9d66fe6c-a4d7-4c23-9e85-675f304c252d}" />
+          <AitFeature Name="{9da4ca41-20e1-4e9b-9f65-a9f435340c3a}" />
+          <AitFeature Name="{9e365e57-48b2-4160-956f-c7385120bbfc}" />
+          <AitFeature Name="{9fac9741-5cc4-4336-ae38-6212b75a915a}" />
+          <AitFeature Name="{9ffdf7f5-b8c9-4ef0-b7d2-1de626561fc8}" />
+          <AitFeature Name="{a09691df-9824-41fe-b530-b0d8990e64c1}" />
+          <AitFeature Name="{a099e6be-e624-459a-bb1d-e05c73e2cc66}" />
+          <AitFeature Name="{a19f7ba8-d8cd-5df2-ab44-fefd26644484}" />
+          <AitFeature Name="{a1e254d8-a446-4a27-9a9d-a0f59e1258a5}" />
+          <AitFeature Name="{a26dd1dc-cd44-435c-be94-01d6241c231c}" />
+          <AitFeature Name="{a31eafe1-41dc-47f8-ae22-9706c8f143d4}" />
+          <AitFeature Name="{a391d09b-4a99-4b7c-9d8d-6fa5d01f6fbf}" />
+          <AitFeature Name="{a50a4bbd-8361-469c-90da-e9a40c7474df}" />
+          <AitFeature Name="{a6612fb6-7688-4ace-95fb-359538e7aa01}" />
+          <AitFeature Name="{a69fc352-da66-404c-823f-5358594e70bb}" />
+          <AitFeature Name="{a7a69ec9-ea35-4679-bf29-f4f09286d314}" />
+          <AitFeature Name="{a856e674-b0b6-4bc3-bba8-1ba06e40d4b5}" />
+          <AitFeature Name="{a8912263-2951-4f58-a9c5-5a134eaa7f07}" />
+          <AitFeature Name="{a8d0aff5-90e1-5921-87dd-576a4b0a95b6}" />
+          <AitFeature Name="{a8d8a409-9130-5e14-8426-0782aaf01608}" />
+          <AitFeature Name="{a907d496-46a0-4cd7-8dbe-f9a581df60b1}" />
+          <AitFeature Name="{aa1160cb-dfb9-4c56-abdc-711b63c8eb94}" />
+          <AitFeature Name="{ab8e5d11-b0c1-5a21-95ae-f16bf3a37624}" />
+          <AitFeature Name="{ac7f26f2-feb7-5b2a-8ac4-345bc62caede}" />
+          <AitFeature Name="{ae44597e-d411-5b7f-bbec-6a96c94a107a}" />
+          <AitFeature Name="{ae814041-c531-43b4-bf99-12f506f7b01c}" />
+          <AitFeature Name="{aebaf785-43fc-4e2c-95c3-97ae84eabc8e}" />
+          <AitFeature Name="{af09609a-129c-4170-9e9c-e2cdf025dca4}" />
+          <AitFeature Name="{af0e05f7-c4b7-44c5-b09d-5cb7052b3a97}" />
+          <AitFeature Name="{af404424-26df-44f4-8714-9359249b62d3}" />
+          <AitFeature Name="{af5207d9-c433-4764-b3fd-8fa6bfbcbadc}" />
+          <AitFeature Name="{afcbbe9b-582b-4133-9648-e44ca46ee491}" />
+          <AitFeature Name="{b01c8a21-de6f-5edd-8796-300e3fe66382}" />
+          <AitFeature Name="{b186cda2-5d46-4bcd-a811-269ad15b3aee}" />
+          <AitFeature Name="{b3765d69-68a5-4b32-8861-fdb90c1f5836}" />
+          <AitFeature Name="{b440c7c3-02b4-4980-9342-25dae1c0f188}" />
+          <AitFeature Name="{b4c1e3ac-8768-5b9d-a661-f63330b8507b}" />
+          <AitFeature Name="{b56a6076-19e2-50c1-930f-825bfc39635c}" />
+          <AitFeature Name="{b5ad9b23-2f41-498e-8319-015ee8a75346}" />
+          <AitFeature Name="{b5ecd72b-991b-5ec7-bacc-7ccd6bebe331}" />
+          <AitFeature Name="{b6351c55-c284-46e4-8310-fb0967fab76f}" />
+          <AitFeature Name="{b6aa9834-6691-44d1-bdf7-58820c27b0d0}" />
+          <AitFeature Name="{b6bf67dd-84bd-44f8-ac1c-93ebcb9dba91}" />
+          <AitFeature Name="{b6f0c4ad-4d39-49e6-bb91-d924eefd8538}" />
+          <AitFeature Name="{b9c9e1a7-620f-4895-935d-10fbac6fd29e}" />
+          <AitFeature Name="{b9cc891c-4745-5a25-9845-e44d13425a38}" />
+          <AitFeature Name="{bafaecad-484d-41be-ba80-1d58c65263ea}" />
+          <AitFeature Name="{bb2afc33-93b1-42ed-8b26-236dd9c78496}" />
+          <AitFeature Name="{bb3c25e5-46cf-4317-a3f5-02621ad54478}" />
+          <AitFeature Name="{bc2b28f1-26f2-4aab-b256-3b5350881e37}" />
+          <AitFeature Name="{bd4b0143-3a22-5ee2-92ed-7bc3c129e52b}" />
+          <AitFeature Name="{be9b3080-b2c3-422b-bce1-ec90efb5d7b5}" />
+          <AitFeature Name="{bea93e67-dbee-4f7b-af0d-a79aae5333bf}" />
+          <AitFeature Name="{bf16482e-80ed-51f0-b9c9-3a804e2d6403}" />
+          <AitFeature Name="{bf2195a9-f4ea-4336-977c-f8fcf78b0d9e}" />
+          <AitFeature Name="{bf666554-7605-5d9a-b14e-18d8c8472afe}" />
+          <AitFeature Name="{bf9918ea-d801-4564-a495-b1e84f8ad085}" />
+          <AitFeature Name="{c09f33da-08ab-4931-9b7c-451025f21f81}" />
+          <AitFeature Name="{c192280d-3a09-5423-9dc5-67b83ebde41d}" />
+          <AitFeature Name="{c1d3d1a2-ae17-5a5f-b5a2-bdcc8844889a}" />
+          <AitFeature Name="{c229f252-dede-5d42-a01a-8479d56a7d2f}" />
+          <AitFeature Name="{c246ff23-d80d-44de-8db9-0d815e269ac0}" />
+          <AitFeature Name="{c2fdd1f8-7105-4a74-a109-de29dff56b98}" />
+          <AitFeature Name="{c47eba15-dc6b-4b36-9d80-82fb8817b988}" />
+          <AitFeature Name="{c497789b-b499-4d69-b5c2-ae9d5d6d594e}" />
+          <AitFeature Name="{c4b27075-e641-453e-824d-012fc7cf95cf}" />
+          <AitFeature Name="{c541f58c-43a9-4216-b718-e0b11b14e93e}" />
+          <AitFeature Name="{c602b59e-0a8e-5e99-b478-2b564585278d}" />
+          <AitFeature Name="{c81c2720-5c52-4bbe-a199-2b1e34f00f70}" />
+          <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
+          <AitFeature Name="{cb43ccc9-446b-4a4f-be97-757771be5203}" />
+          <AitFeature Name="{cb5cd2b9-e3b4-458c-b64e-1434fd1bd88a}" />
+          <AitFeature Name="{cdb5efb3-5788-509d-9be1-71ccb8a3362a}" />
+          <AitFeature Name="{cf651713-cd08-4fd8-b697-a281b6544e2e}" />
+          <AitFeature Name="{d06eb1c7-3805-4ecb-b757-6cf15e26fef3}" />
+          <AitFeature Name="{d1f276c4-98d8-4636-bf49-eb79507548e9}" />
+          <AitFeature Name="{d26b2819-897f-5c7d-84d6-56d796561431}" />
+          <AitFeature Name="{d304027c-5714-502a-9312-68ca86397124}" />
+          <AitFeature Name="{d353f885-4bf0-5dc2-878e-ec7a394ee880}" />
+          <AitFeature Name="{d384759f-34f6-4482-8435-f552f9b24cc8}" />
+          <AitFeature Name="{d39d6322-7c9c-481b-827b-c8b2d9bb6fc7}" />
+          <AitFeature Name="{d3cfb977-0084-41d7-a221-28158d3bc32c}" />
+          <AitFeature Name="{d481759e-3eff-4462-823d-fd52f9ba4cc8}" />
+          <AitFeature Name="{d4cd3dfe-4079-42e9-a39a-3095d3f049c6}" />
+          <AitFeature Name="{d5312e60-5cc1-42a1-920c-1af46be2f986}" />
+          <AitFeature Name="{d6602d54-88f6-43f6-85d8-a9d914a6dd3b}" />
+          <AitFeature Name="{d9f52e0d-21fb-5a0b-b4c6-7d162af7fb9c}" />
+          <AitFeature Name="{da007e54-b3c2-4b9a-aa8e-d3f071262b97}" />
+          <AitFeature Name="{da628f0a-9752-49e2-bde2-49eccab9194d}" />
+          <AitFeature Name="{dacbffdc-68ef-5fd0-b657-782d0ac9807e}" />
+          <AitFeature Name="{dadecfd0-6e1e-473f-b0be-b02404d6a86d}" />
+          <AitFeature Name="{dbff71d9-979a-4b2e-a49b-3bb17fdef574}" />
+          <AitFeature Name="{dc8f368b-eccc-498e-b139-91142254d7ae}" />
+          <AitFeature Name="{dd28ff94-d11e-5ae7-b819-6177c1599313}" />
+          <AitFeature Name="{dfa149ac-1849-445e-937c-40a9590cc076}" />
+          <AitFeature Name="{e0c06ef2-dbc9-511c-bab6-25756dd516a3}" />
+          <AitFeature Name="{e2663f37-2e1b-500c-ad68-c3ed7a8f74c8}" />
+          <AitFeature Name="{e28243bc-67f3-462a-b4e0-3bbf6c3dab0b}" />
+          <AitFeature Name="{e4385929-c004-4bcf-8970-359486e39f88}" />
+          <AitFeature Name="{e521c894-2c26-5946-9e61-2b5e188d01ed}" />
+          <AitFeature Name="{e609698d-6aab-5adc-8b3f-a852f9e56fd0}" />
+          <AitFeature Name="{e6f2fef0-0712-487f-b313-f300b8d79aa1}" />
+          <AitFeature Name="{e7b42a9a-f140-52ad-a658-e237b9a3dcca}" />
+          <AitFeature Name="{e80d3d9d-96c9-579e-8e42-d550700de925}" />
+          <AitFeature Name="{e827e8b9-08d9-4a8e-a0ac-fe5ed3cbbbd3}" />
+          <AitFeature Name="{e9bdaaf0-cbf6-5c72-be90-29cbf3a1319b}" />
+          <AitFeature Name="{ea0fe405-d432-5ac7-9ef8-5a65e1f97d7e}" />
+          <AitFeature Name="{ea1f89c7-ebf5-4ab8-88f7-680d821dac61}" />
+          <AitFeature Name="{ea79a752-f7c2-4265-b1bd-c4dec4e4f080}" />
+          <AitFeature Name="{ec752224-9b77-4720-bb21-4ac89fdb1afd}" />
+          <AitFeature Name="{ecae8ccd-8e5e-4fbe-9846-30a6370afcdf}" />
+          <AitFeature Name="{ecc4b13b-146c-5963-b8b3-024c5b9b95e4}" />
+          <AitFeature Name="{eccb574a-c684-5572-a679-6b0842cfb57f}" />
+          <AitFeature Name="{ecdc76ef-a99b-5ce7-b9a4-c85e66fed1ee}" />
+          <AitFeature Name="{f00e9fbf-d30e-5854-8927-c9512abd8118}" />
+          <AitFeature Name="{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}" />
+          <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
+          <AitFeature Name="{f3864c10-14a4-5516-b1d9-63b6579429b1}" />
+          <AitFeature Name="{f3f020ab-a46c-42b0-9efe-69764d5cffa6}" />
+          <AitFeature Name="{f4b40e52-642f-4629-a54a-ea5d2349c448}" />
+          <AitFeature Name="{f66c6bd3-55b4-5bbb-b82a-6d9ce383091a}" />
+          <AitFeature Name="{f6790987-e6e5-47f2-92c6-eccce4ba159a}" />
+          <AitFeature Name="{f6d1f700-49c2-52ae-8154-826f9908773c}" />
+          <AitFeature Name="{f744d97b-9988-44fb-abd6-5378844cfa8b}" />
+          <AitFeature Name="{f76efa41-380e-45db-be87-9e1326ba4b57}" />
+          <AitFeature Name="{f88345f8-e0a3-4be2-b90c-dc20e6d8beb0}" />
+          <AitFeature Name="{fa002c1a-494e-46cf-91d4-e14a8d798674}" />
+          <AitFeature Name="{fa3f6186-4214-428c-a64c-14c9ac7315ea}" />
+          <AitFeature Name="{faaea667-fbeb-49cb-adb2-71184c556e43}" />
+          <AitFeature Name="{fbc93e26-a14a-4b4f-82b0-33bed920af52}" />
+          <AitFeature Name="{fd104460-2e15-4ba3-8b8f-fa693a4161e9}" />
+          <AitFeature Name="{fd1d67ae-eafb-4079-be80-6dc92a03aedf}" />
+          <AitFeature Name="{fe750d77-1307-5df2-a021-1c7a8d6b80ad}" />
+          <AitFeature Name="{ffd72e78-ec1f-5bcc-9d13-ff5fbb040562}" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-localization-l1-2-1.dll!GetCPInfoExW" />
+          <AitFeature Name="api-ms-win-core-localization-l1-2-1.dll!IsValidLocaleName" />
+          <AitFeature Name="api-ms-win-core-localization-l1-2-1.dll!ResolveLocaleName" />
+          <AitFeature Name="oleaut32.dll!SysFreeString" />
+          <AitFeature Name="oleaut32.dll!SysStringLen" />
+          <AitFeature Name="mrt100_app.dll!RhAllocLocal" />
+          <AitFeature Name="mrt100_app.dll!RhBoxAny" />
+          <AitFeature Name="mrt100_app.dll!RhExceptionHandling_ThrowClasslibIndexOutOfRangeException" />
+          <AitFeature Name="mrt100_app.dll!RhExceptionHandling_ThrowClasslibOverflowException" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckArrayStore" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCast" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastArray" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastClass" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckCastInterface" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_CheckUnbox" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOf" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOfClass" />
+          <AitFeature Name="mrt100_app.dll!RhTypeCast_IsInstanceOfInterface" />
+          <AitFeature Name="mrt100_app.dll!RhUnboxAny" />
+          <AitFeature Name="mrt100_app.dll!RhpAssignRefEDX" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckCctor2" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckedAssignRefEDX" />
+          <AitFeature Name="mrt100_app.dll!RhpCheckedLockCmpXchg" />
+          <AitFeature Name="mrt100_app.dll!RhpCopyAnyWithWriteBarrier" />
+          <AitFeature Name="mrt100_app.dll!RhpCopyMultibyteWithWriteBarrier" />
+          <AitFeature Name="mrt100_app.dll!RhpGetThread" />
+          <AitFeature Name="mrt100_app.dll!RhpInitMultibyte" />
+          <AitFeature Name="mrt100_app.dll!RhpInitialInterfaceDispatch" />
+          <AitFeature Name="mrt100_app.dll!RhpLoopHijack" />
+          <AitFeature Name="mrt100_app.dll!RhpNewArray" />
+          <AitFeature Name="mrt100_app.dll!RhpNewFast" />
+          <AitFeature Name="mrt100_app.dll!RhpNewFinalizable" />
+          <AitFeature Name="mrt100_app.dll!RhpPInvokeExceptionGuard" />
+          <AitFeature Name="mrt100_app.dll!RhpRegisterModule" />
+          <AitFeature Name="mrt100_app.dll!RhpResolveInterfaceMethod" />
+          <AitFeature Name="mrt100_app.dll!RhpRethrow" />
+          <AitFeature Name="mrt100_app.dll!RhpReversePInvoke" />
+          <AitFeature Name="mrt100_app.dll!RhpReversePInvokeReturn" />
+          <AitFeature Name="mrt100_app.dll!RhpSuppressGcStress" />
+          <AitFeature Name="mrt100_app.dll!RhpThrowEx" />
+          <AitFeature Name="mrt100_app.dll!RhpTrapThreads" />
+          <AitFeature Name="mrt100_app.dll!RhpUnsuppressGcStress" />
+          <AitFeature Name="mrt100_app.dll!RhpWaitForGC" />
+          <AitFeature Name="mrt100_app.dll!RhpWaitForSuspend" />
+          <AitFeature Name="sharedlibrary.dll!$NEAT$" />
+          <AitFeature Name="sharedlibrary.dll!CreateCommandLine" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharArrayStartLength" />
+          <AitFeature Name="sharedlibrary.dll!CtorCharPtrStartLength" />
+        </AitCategory>
+        <AitCategory Id="WRTClassFromSearch">
+          <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
+          <AitFeature Name="Windows.ApplicationModel.Package" />
+          <AitFeature Name="Windows.Globalization.Language" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Frame" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.System.Threading.ThreadPool" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.UserControl" />
+          <AitFeature Name="Windows.Globalization.GeographicRegion" />
+          <AitFeature Name="Windows.UI.Xaml.Application" />
+          <AitFeature Name="Windows.Globalization.Calendar" />
+          <AitFeature Name="Windows.Foundation.Diagnostics.AsyncCausalityTracer" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmProvider" />
+          <AitFeature Name="Windows.Security.Cryptography.CryptographicBuffer" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
+          <AitFeature Name="Windows.System.Launcher" />
+          <AitFeature Name="Windows.System.Threading.ThreadPoolTimer" />
+          <AitFeature Name="Windows.UI.Color" />
+          <AitFeature Name="Windows.Security.Cryptography.Core.HashAlgorithmNames" />
+          <AitFeature Name="Windows.Globalization.CalendarIdentifiers" />
+          <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceContext" />
+          <AitFeature Name="Windows.UI.Xaml.Window" />
+          <AitFeature Name="Windows.UI.Core.CoreWindow" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="messages_tr.js" Id="0000f858a648ef753156695f5d6672cd5f89f607675b" />
+      <AitFile ErrorCode="0" Name="chartist.js" Id="0000f8b5de1bc77c943039b7176f3e167eef344ce5b9">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createElementNS" />
+          <AitFeature Name="document.createTextNode" />
+          <AitFeature Name="document.implementation.hasFeature" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.matchMedia" />
+          <AitFeature Name="window.removeEventListener" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery.flot.symbol.js" Id="0000f93b8b68bff54c802c503295a395b82e1c0636dc" />
+      <AitFile ErrorCode="0" Name="sr-cyrl.js" Id="0000f94eb44768e5c4c02097c75e094f6784cbb79978" />
+      <AitFile ErrorCode="0" Name="messages_ar.min.js" Id="0000f9584e934d2694c5437786f79945a71b4c9c29f1" />
+      <AitFile ErrorCode="0" Name="jquery-ui.custom.min.js" Id="0000f9a3d0cb9ba200fb423e33930f5441751ea39721">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="navigator.userAgent.toLowerCase" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="forms.js" Id="0000fb32e82541c435d8fd8dc1ec6a46f29163ad87af">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="window.validate_field" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="methods_de.js" Id="0000fb6f1b4a4f2400ba3b5664e5fd544443ebcb668a" />
+      <AitFile ErrorCode="0" Name="lang-all.js" Id="0000fbdd3a60344d997830238288b3bc8b90999c37c9" />
+      <AitFile ErrorCode="0" Name="jquery.validate.min.js" Id="0000fc82fb23ccece3522359fe88dad3569925b3379c" />
+      <AitFile ErrorCode="0" Name="morris.min.js" Id="0000fe98583c8fdee6da1334fdc426e15c4876839206">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="offline.html" Id="0000ff2aab3bde7bc88eb31fd580826be16afdc1cfa4" />
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>
